@@ -1,0 +1,22 @@
+{
+  "name": "fetch_api",
+  "version": "1.0.0",
+  "description": "Fetching(API) some github's repositories of HackYourFuture",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laith0424/projects.git"
+  },
+  "author": "Ayham Alhelal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laith0424/projects/issues"
+  },
+  "homepage": "https://github.com/laith0424/projects#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

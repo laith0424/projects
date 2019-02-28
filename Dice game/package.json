@@ -1,0 +1,14 @@
+{
+  "name": "dice_game",
+  "version": "1.0.0",
+  "description": "Simple dice game",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Ayham Alhelal",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

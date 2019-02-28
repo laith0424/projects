@@ -1,0 +1,46 @@
+
+.u-center-text { text-align: center !important; }
+
+.u-margin-bottom-small { margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-big { 
+    margin-bottom: 8rem !important;
+
+    @include respond(tab-port) {
+        margin-bottom: 5rem !important;
+    }
+}
+
+.u-fixed-position{
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+} 
+
+
+  
+
+
+
+.u-margin-bottom-medium {
+    margin-bottom: 4rem !important;
+
+    @include respond(tab-port) {
+        margin-bottom: 3rem !important;
+    }
+}
+
+
+
+.u-margin-top-big { margin-top: 8rem !important; }
+.u-margin-top-huge { margin-top: 10rem !important; }
+
+.u-capitalize-text{
+    text-transform: capitalize;
+} 
+
+.NetworkError{
+    background-color: $color-secondary-light !important;
+}

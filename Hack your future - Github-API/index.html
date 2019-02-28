@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="The aim of the this  Single Page Application is to  view  some of Hack Your Future github`s repositories. When any repository is selected, the repository information, contributors  and their number of contribution will be shown dynamically.">
+        <meta name="keywords" content="HTML, HTML5, CSS3, CSS, XML, JavaScript, API, Git, Hack Your Future, HackYourFuture, Github, Git/Github ,Sass ,Scss ,nodejs">
+        <meta name="author" content="Ayham Alhelal">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/code-1.ico">
+        
+        <title>Hack Your Future - Repository</title>
+    </head>
+
+    <body>
+        <main>
+            <section class="section-repository">
+                <div class="bg-video u-fixed-position">
+                    <video class="bg-video__content" autoplay muted loop>
+                        <source src="img/Words.mp4" type="video/mp4">
+                        <source src="img/Words.webm" type="video/webm">
+                        <source src="img/Words.ogv" type="video/ogv">
+                        Your browser is not supported!
+                    </video>
+                </div>
+
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-primary">
+                            Hack Your Future - Repository
+                    </h2>
+                </div>
+                <div class="u-center-text u-margin-bottom-big">
+                    <select   id='select-repository'>
+                        <option disabled selected>Repository</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <div class="repository">
+                        <div class="repository__text">
+                            <h3 class="heading-secondary u-margin-bottom-small u-center-text">HackYourFuture  repository</h3>
+
+                            <div class="repository__text--details" id="repository">
+                                    <ul>
+                                        <li> &nbsp; </li>
+                                        <li> &nbsp; </li>
+                                        <li> &nbsp; </li>
+                                        <li> &nbsp; </li>
+                                        <li> &nbsp; </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Contributors">
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="./js/Util.js"></script>
+        <script src="./js/Repository.js"></script>
+        <script src="./js/Contributor.js"></script>
+        <script src="./js/App.js"></script>
+    </body>
+</html>
