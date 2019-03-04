@@ -1,12 +1,27 @@
 .information-box {
     background-color: rgba($color-white, .8);
     font-size: 1.5rem;
-    height: 57vh;
+    height:45rem; 
     padding: 2.5rem;
     text-align: center;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     transition: transform .3s;
+    @include respond(tab-land){
+        height:53rem;   
+        &:last-child{
+            margin-left: 2rem;
+        }
+        &:first-child{
+            margin-right: 2rem;   
+        }
+    }
+    @include respond(tab-port){
+        height: auto; 
+    }
+    @include respond(phone){
+        height: auto;
+    }
 
     &__icon {
         font-size: 6rem;
@@ -20,4 +35,4 @@
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);
     }
-}
+}   

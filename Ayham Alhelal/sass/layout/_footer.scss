@@ -1,13 +1,35 @@
 .footer {
     background-color: $color-grey-dark-3;
     padding: 10rem 0;
+    padding-top: 30rem;  
     font-size: 1.4rem;
     color: $color-grey-light-1;
+    margin-top: -24rem;
+
+    @include respond(tab-port){
+        padding: 18rem 0;
+    }
+    @include respond(phone){
+        padding: 16rem 0;   
+    }
+
 
     &__navigation {
         border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
         display: inline-block;
+        padding-left: 2rem;
+
+        @include respond(tab-port){
+            width: 100% ;
+            text-align: center;
+            padding-left: 0;
+        }
+        @include respond(phone){
+            width: 100% ;
+            text-align: center;
+            padding-left: 0; 
+        }
     }
 
     &__list {
@@ -44,7 +66,22 @@
     &__copyright {
         border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
+        padding-right: 2rem;  
         width: 80%;
         float: right;
+        text-align: right;
+        @include respond(tab-port){
+            width: 100% ;
+            text-align: center;
+            float: none;
+            padding-right:0;
+        }
+        @include respond(phone){
+            width: 100% ;
+            text-align: center;
+            float: none;
+            padding-right:0;
+        }
+        
     }
-}
+} 

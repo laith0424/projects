@@ -3,7 +3,21 @@
     margin: 0 auto;
 
     &:not(:last-child) {
-        margin-bottom: $gutter-vertical;
+        margin-bottom: $gutter-vertical; 
+        @include respond(tab-port){
+            margin-bottom: $gutter-vertical-small;
+          
+        }
+        @include respond(phone){
+            margin-bottom: $gutter-vertical-small ;
+             
+        }
+    }
+    @include respond(tab-port){
+        max-width: 50rem;
+    }
+    @include respond(phone){
+        max-width: 40rem; 
     }
     
     @include clearfix;
@@ -13,6 +27,20 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+            @include respond(tab-port){
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small ;
+            }
+            @include respond(phone){
+                margin-right : 0;
+                margin-bottom: $gutter-vertical-small ;
+            }
+        }
+        @include respond(tab-port){
+            width: 100% !important;
+        }
+        @include respond(phone){
+            width: 100% !important;  
         }
     }
 
@@ -41,4 +69,5 @@
         width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
     }
 
-}
+} 
+   

@@ -9,6 +9,7 @@
 
     &__img{
         height: 3.5rem;
+        opacity: .5;
     }
 
     &__list {
@@ -39,5 +40,6 @@
             transform: translateX(1rem);
         }
     }
+
 
 }
